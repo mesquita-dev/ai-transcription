@@ -120,7 +120,7 @@ export function VideoInputForm(props: VideoInputFormProps) {
       >
         {videoFile ? (
           <video
-            src={previewURL}
+            src={previewURL || undefined}
             controls={false}
             className="pointer-events-none absolute inset-0"
           />
